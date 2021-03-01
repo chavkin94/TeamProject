@@ -2,7 +2,7 @@ import './App.css';
 import Director from './Director.jpg';
 import Proger from './Proger.jpg';
 
-function App() {
+function Contacts() {
   return (
     <div className="App">
       <header className="App-header">
@@ -19,5 +19,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
