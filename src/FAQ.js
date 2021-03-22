@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+
 import db from './firebase.config';
 import React, {useEffect, useState} from "react";
 
@@ -43,6 +44,7 @@ function FAQ() {
                     ))}
                 </ul>
             </div>
+
         </div>
     );
 }
