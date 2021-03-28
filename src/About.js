@@ -4,7 +4,7 @@ import db from './firebase.config';
 import React, {useEffect, useState} from "react";
 
 function About() {
-  const [Zagolovok, setZagolovok] = useState()
+  const [zagolovok, setZagolovok] = useState()
   const [easyText, setEasyText] = useState([])
 
   const fetchFaqs = () => {
@@ -30,7 +30,7 @@ function About() {
 
   return (
     <div className="App" style={AboutStyle}>
-      {Zagolovok && Zagolovok.map(item => (
+      {zagolovok && zagolovok.map(item => (
                         <h1 key={item}>{item}</h1>
                     ))}
       {easyText && easyText.map(item => (
