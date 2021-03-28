@@ -7,7 +7,7 @@ function About() {
   const [zagolovok, setZagolovok] = useState()
   const [easyText, setEasyText] = useState([])
 
-  const fetchFaqs = () => {
+  const fetchAbout = () => {
       db.collection("team-collection")
           .doc('About')
           .get()
@@ -18,7 +18,7 @@ function About() {
   }
 
   useEffect(() => {
-      fetchFaqs()
+      fetchAbout()
   }, [])
 
 
@@ -29,7 +29,7 @@ function About() {
   };
 
   return (
-    <div className="App" style={AboutStyle}>
+    <div style={AboutStyle}>
       {zagolovok && zagolovok.map(item => (
                         <h1 key={item}>{item}</h1>
                     ))}
