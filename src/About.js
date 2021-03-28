@@ -22,14 +22,10 @@ function About() {
   }, [])
 
 
-  const AboutStyle = {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-  };
+  
 
   return (
-    <div style={AboutStyle}>
+    <div>
       {zagolovok && zagolovok.map(item => (
                         <h1 key={item}>{item}</h1>
                     ))}
