@@ -12,7 +12,7 @@ function About() {
           .doc('About')
           .get()
           .then(doc => {
-            setZagolovok(doc.data().Zagolovok)
+            setZagolovok(doc.data().zagolovok)
             setEasyText(doc.data().easyText)
           });
   }
