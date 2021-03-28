@@ -9,7 +9,7 @@ function About() {
 
   const fetchAbout = () => {
       db.collection("team-collection")
-          .doc('About')
+          .doc('about')
           .get()
           .then(doc => {
             setZagolovok(doc.data().zagolovok)
