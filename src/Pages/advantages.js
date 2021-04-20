@@ -33,7 +33,7 @@ function Advantages() {
     };
     return (
         <div>
-            <h3>Home</h3>
+            <h3>Advantages</h3>
 
             <div style={faqStyle}>
 
