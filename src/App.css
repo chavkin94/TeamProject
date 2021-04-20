@@ -49,3 +49,11 @@ ul li a {
     transform: rotate(360deg);
   }
 }
+
+.tit{
+  margin: 20px;
+}
+
+.ful{
+  margin-left: 200px;
+}

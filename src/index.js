@@ -6,6 +6,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
 Sentry.init({
     dsn: "https://a57e530478d144e7ab5d49f3e7fb9b76@o551709.ingest.sentry.io/5675397",
     integrations: [new Integrations.BrowserTracing()],
