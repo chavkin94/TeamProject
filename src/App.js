@@ -4,7 +4,7 @@ import FAQ from "./FAQ";
 import About from "./About";
 import Home from "./Home";
 import Contacts from "./contacts";
-import Advantages from "./Pages/advantages";
+// import Advantages from "./advantages";
 import React from "react";
 import {
   BrowserRouter as Router,
@@ -12,7 +12,6 @@ import {
   Route,
   Link
 } from "react-router-dom";
-
 
 function App() {
     return (
@@ -31,9 +30,9 @@ function App() {
                 <li>
                     <Link to="/contacts">contacts</Link>
                 </li>
-                <li>
+                {/* <li>
                     <Link to="/advantages">advantages</Link>
-                </li>
+                </li> */}
             </ul>
             <Switch>
                 <Route exact path="/">
@@ -48,9 +47,9 @@ function App() {
                 <Route path="/contacts">
                     <Contacts />
                 </Route>               
-                 <Route path="/advantages">
+                 {/* <Route path="/advantages">
                     <Advantages />
-                </Route>
+                </Route> */}
             </Switch>
         </div>
         </Router>
